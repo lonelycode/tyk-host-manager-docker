@@ -1,0 +1,11 @@
+{
+    "mongo_url": "mongodb://tyk_mongo/tyk_analytics",
+    "redis_port": 6379,
+    "redis_host": "tyk_redis",
+    "redis_password": "",
+    "tyk_ports": [8080],
+    "tyk_secret": "352d20ee67be67f6340b4c0605b044b7",
+    "license_owner": "Your Name",
+    "manage_nginx": true,
+    "manage_tyk_nodes": false
+}
