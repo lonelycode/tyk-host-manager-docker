@@ -2,9 +2,9 @@ FROM nginx
 # Get dashboard
 RUN apt-get update && apt-get install -y wget
 RUN apt-get install -y sed
-RUN wget https://github.com/lonelycode/tyk/releases/download/1.6/tyk-dashboard-amd64-v0.9.4.4.tar.gz
-RUN tar -xvzf tyk-dashboard-amd64-v0.9.4.4.tar.gz -C /opt
-RUN mv /opt/tyk-analytics-v0.9.4.4 /opt/tyk-dashboard
+RUN wget https://github.com/lonelycode/tyk/releases/download/1.7/tyk-dashboard-amd64-v0.9.5.tar.gz
+RUN sudo tar -xvzf tyk-dashboard-amd64-v0.9.5.tar.gz -C /opt
+RUN sudo mv /opt/tyk-analytics-v0.9.5 /opt/tyk-dashboard
 
 # Set up link to hosts files
 RUN rm -rf /etc/nginx/conf.d
